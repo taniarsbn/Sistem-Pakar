@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsultasi - Diagnosa Diabetes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Konsultasi</h1>
+        <form id="konsultasiForm">
+            <div class="form-group">
+                <label for="makanBanyak">Makan dengan porsi banyak?</label>
+                <select id="makanBanyak">
+                    <option value="0">Tidak</option>
+                    <option value="0.2">Tidak Tahu</option>
+                    <option value="0.4">Sedikit Yakin</option>
+                    <option value="0.6">Cukup Yakin</option>
+                    <option value="0.8">Yakin</option>
+                    <option value="1">Sangat Yakin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="seringKencing">Sering kencing?</label>
+                <select id="seringKencing">
+                    <option value="0">Tidak</option>
+                    <option value="0.2">Tidak Tahu</option>
+                    <option value="0.4">Sedikit Yakin</option>
+                    <option value="0.6">Cukup Yakin</option>
+                    <option value="0.8">Yakin</option>
+                    <option value="1">Sangat Yakin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="penurunanBeratBadan">Penurunan berat badan?</label>
+                <select id="penurunanBeratBadan">
+                    <option value="0">Tidak</option>
+                    <option value="0.2">Tidak Tahu</option>
+                    <option value="0.4">Sedikit Yakin</option>
+                    <option value="0.6">Cukup Yakin</option>
+                    <option value="0.8">Yakin</option>
+                    <option value="1">Sangat Yakin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="kesemutan">Kesemutan?</label>
+                <select id="kesemutan">
+                    <option value="0">Tidak</option>
+                    <option value="0.2">Tidak Tahu</option>
+                    <option value="0.4">Sedikit Yakin</option>
+                    <option value="0.6">Cukup Yakin</option>
+                    <option value="0.8">Yakin</option>
+                    <option value="1">Sangat Yakin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gatal">Gatal-gatal?</label>
+                <select id="gatal">
+                    <option value="0">Tidak</option>
+                    <option value="0.2">Tidak Tahu</option>
+                    <option value="0.4">Sedikit Yakin</option>
+                    <option value="0.6">Cukup Yakin</option>
+                    <option value="0.8">Yakin</option>
+                    <option value="1">Sangat Yakin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mataKabur">Mata kabur?</label>
+                <select id="mataKabur">
+                    <option value="0">Tidak</option>
+                    <option value="0.2">Tidak Tahu</option>
+                    <option value="0.4">Sedikit Yakin</option>
+                    <option value="0.6">Cukup Yakin</option>
+                    <option value="0.8">Yakin</option>
+                    <option value="1">Sangat Yakin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="riwayatKeluarga">Riwayat keluarga diabetes melitus?</label>
+                <select id="riwayatKeluarga">
+                    <option value="0">Tidak</option>
+                    <option value="0.2">Tidak Tahu</option>
+                    <option value="0.4">Sedikit Yakin</option>
+                    <option value="0.6">Cukup Yakin</option>
+                    <option value="0.8">Yakin</option>
+                    <option value="1">Sangat Yakin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="konsumsiGula">Konsumsi gula atau karbohidrat tinggi?</label>
+                <select id="konsumsiGula">
+                    <option value="0">Tidak</option>
+                    <option value="0.2">Tidak Tahu</option>
+                    <option value="0.4">Sedikit Yakin</option>
+                    <option value="0.6">Cukup Yakin</option>
+                    <option value="0.8">Yakin</option>
+                    <option value="1">Sangat Yakin</option>
+                </select>
+            </div>
+            <button type="button" onclick="diagnosis()">Diagnosa</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="diagnosis.js"></script>
+</body>
+</html>
